@@ -1,0 +1,27 @@
+.breadcrumbs-container { font-size: 1rem; font-weight: normal; }
+.breadcrumbs-container li { display: inline-block; line-height: 1.25rem; }
+.breadcrumbs-container li.current { font-weight: 500; }
+.breadcrumbs-container li + li { margin-left: 1rem; padding-left: 1rem; border-left: 2px solid #605e5c; }
+
+body { background-color: #f9fafc; }
+
+.main p { margin-bottom: 0; }
+
+.page-title { font-weight: normal; font-size: 1.25rem; }
+@media only screen and (min-width: 992px) { .page-title { padding-top: 8.125rem; } }
+.page-title h1 { margin-bottom: 2rem; }
+@media only screen and (min-width: 768px) { .page-title h1 { font-size: 2.5rem; } }
+@media only screen and (min-width: 992px) { .page-title h1 { font-size: 3.125rem; margin-bottom: 3rem; } }
+
+.white-bg { padding-top: 5rem; }
+
+.breadcrumbs-container { margin-bottom: 3.125rem; }
+.breadcrumbs-container li + li { border-color: #e5e5e5; }
+
+.media-wrapper { margin-bottom: 5rem; font-size: 0; }
+.media-wrapper video, .media-wrapper img { width: 100%; height: auto; }
+
+.event-body, .event-body * { font-family: "J&JCircular" !important; }
+.event-body img { width: 100%; height: auto; }
+
+/*# sourceMappingURL=event.css.map */

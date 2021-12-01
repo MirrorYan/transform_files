@@ -1,0 +1,132 @@
+// Support
+@import './base/base';
+// components
+@import './components/texts';
+
+body {
+  background-color: #fff;
+}
+
+.page-outline {
+  font-size: 1.125rem;
+  @media #{$mobile} {
+    font-size: 1rem;
+  }
+  h1 {
+    margin-bottom: 1.875rem;
+  }
+}
+
+.normal-block {
+  @media #{$desktop} {
+    padding-top: 8.25rem;
+  }
+}
+
+.contact-form {
+  margin-top: 5.625rem;
+
+  .valid-success,
+  .valid-error {
+    padding: .5em 1em;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    font-weight: normal;
+    @media #{$mobile} {
+      font-size: 1rem;
+    }
+  }
+  .valid-success {
+    color: $color-green;
+    background-color: rgba($color-green, .1);
+    border-left: 3px solid $color-green;
+  }
+  .valid-error {
+    color: $color-primary;
+    background-color: rgba($color-primary, .1);
+    border-left: 3px solid $color-primary;
+  }
+}
+.form-info {
+  font-size: 1.25rem;
+  @media #{$desktop} {
+    @include flex;
+    @include justify-content(space-between);
+
+    .left-side {
+      width: calc(56% - 1.875rem);
+    }
+    .right-side {
+      width: 54%;
+      margin-left: 1.875rem;
+    }
+  }
+  @media #{$touchscreen} {
+    font-size: 1rem;
+    .right-side {
+      margin-top: 1.875rem;
+    }
+  }
+  @media #{$mobile} {
+    font-size: .875rem;
+    .right-side {
+      margin-top: 1rem;
+    }
+  }
+
+  input,
+  textarea {
+    @include placeholder {
+      color: #B6B2AE;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+  textarea {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    padding: .75rem 1.25rem;
+    font-size: 20px;
+    @media #{$touchscreen} {
+      font-size: 16px;
+    }
+    @media #{$mobile} {
+      font-size: 14px;
+    }
+  }
+}
+.form-item {
+  + .form-item {
+    margin-top: 1.875rem;
+  }
+  &.input-group {
+    @include flex;
+    input {
+      @include flex-grow(1);
+    }
+    input + input {
+      margin-left: 1.875rem;
+    }
+  }
+}
+.form-actions {
+  margin-top: 2.625rem;
+  text-align: right;
+  @media #{$mobile} {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .btn {
+    min-width: 9.25rem;
+    @media #{$mobile} {
+      min-width: 7.5rem;
+    }
+    + .btn {
+      margin-left: 1rem;
+    }
+  }
+}

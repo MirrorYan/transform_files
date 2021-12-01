@@ -1,0 +1,217 @@
+.contact-us:after { content: ''; display: block; clear: both; }
+
+@font-face { font-family: "J&JCircular"; font-stretch: normal; font-style: normal; font-weight: 300; src: url("/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Light.woff") format("woff"), url("/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Light.ttf") format("truetype"), url("/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Light.otf") format("opentype"); }
+@font-face { font-family: "J&JCircular"; font-stretch: normal; font-style: normal; font-weight: normal; src: url("/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Book.woff") format("woff"), url("/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Book.ttf") format("truetype"), url("/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Book.otf") format("opentype"); }
+@font-face { font-family: "J&JCircular"; font-stretch: normal; font-style: normal; font-weight: 500; src: url("/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Medium.woff") format("woff"), url("/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Medium.ttf") format("truetype"), url("/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Medium.otf") format("opentype"); }
+@font-face { font-family: "J&JCircular"; font-stretch: normal; font-style: normal; font-weight: 900; src: url("/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Bold.woff") format("woff"), url("/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Bold.ttf") format("truetype"), url("/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Bold.otf") format("opentype"); }
+/* On site page hide left navigation menu */
+#sideNavBox { display: none; }
+
+.contact-us:after { content: ''; display: block; clear: both; }
+
+#pageTitle, #DeltaPlaceHolderSearchArea, .ms-wiki-columnSpacing { display: none; }
+
+.ms-core-overlay { background-color: transparent; }
+
+.ms-rte-layoutszone-inner { margin: 0; font-size: 0; border: none; }
+
+.ms-core-listMenu-item { border: none !important; }
+
+.ms-wikicontent { padding: 0 !important; }
+
+#titleAreaBox, .ms-webpartzone-cell { margin: 0; }
+
+#contentRow, #s4-bodyContainer, #s4-titlerow, #layoutsTable > tbody > tr > td { padding: 0; }
+
+#contentRow #contentBox { margin-left: 0 !important; margin-right: 0 !important; }
+
+#titleAreaBox, div.ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical { display: block; }
+
+#layoutsTable, #layoutsTable > tbody, #layoutsTable > tbody > tr, #layoutsTable > tbody > tr > td { display: block; }
+#layoutsTable > tbody > tr:nth-child(n+2) { display: none; }
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body { margin: 0; padding: 0; }
+
+.main { line-height: 1.625; font-family: "J&JCircular"; font-weight: 300; font-size: .875rem; color: #605e5c; }
+@media only screen and (min-width: 768px) { .main { font-size: 1rem; } }
+.main h1, .main h2, .main h3, .main h4, .main h5, .main h6 { color: inherit; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; font-family: inherit; }
+
+h1 { font-weight: 900; font-size: 2.5rem; }
+h1, .main h1 { line-height: 1.25; }
+@media only screen and (min-width: 768px) { h1 { font-size: 3.75rem; } }
+@media only screen and (min-width: 1366px) { h1 { font-size: 4.167vw; } }
+
+h2 { font-weight: 500; font-size: 1.625rem; }
+h2, .main h2 { line-height: 1.275; }
+@media only screen and (min-width: 768px) { h2 { font-size: 2rem; } }
+@media only screen and (min-width: 1366px) { h2 { font-size: 2.0833vw; } }
+
+h3 { line-height: 1.267; font-weight: 500; font-size: 1.5rem; }
+@media only screen and (min-width: 768px) { h3 { font-size: 1.625rem; } }
+@media only screen and (min-width: 1366px) { h3 { font-size: 1.5625vw; } }
+
+h4 { line-height: 1.6; font-weight: normal; font-size: 1.125rem; }
+@media only screen and (min-width: 768px) { h4 { font-size: 1.25rem; } }
+
+ul, ol { margin: 0; padding: 0; list-style: none; }
+
+a { -webkit-transition: color 0.2s ease; -moz-transition: color 0.2s ease; transition: color 0.2s ease; }
+a, a:hover, a:active { text-decoration: none; }
+a, a:visited { color: inherit; }
+a:hover { color: #e51400; }
+
+p { margin: 0; }
+p + p { margin-top: 1rem; }
+
+input, textarea, button { outline: none; font-size: inherit; }
+
+input[type=text], input[type=search], textarea { color: inherit; font-size: inherit; font-weight: normal; border: none; background-color: #f9fafc; }
+
+input[type=search]::-webkit-search-cancel-button { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+input[type=text] { height: 3.375rem; line-height: 3.375rem; }
+
+textarea { resize: none; line-height: 1.5; }
+
+img, video { max-width: 100%; }
+
+.container { max-width: 1300px; margin: 0 auto; padding: 0 20px; }
+@media only screen and (min-width: 992px) { .container { width: 90%; } }
+@media only screen and (min-width: 1366px) { .container { width: calc(65.625% + 40px); } }
+
+.normal-block { padding: 5rem 0; }
+@media only screen and (max-width: 375px) { .normal-block { padding: 4rem 0; } }
+@media only screen and (min-width: 1366px) { .normal-block { padding: 6.25vw 0; } }
+
+.white-bg { background-color: #fff; }
+
+.silver-bg { background-color: #f9fafc; }
+
+.color-red, .main .color-red { color: #e51400; }
+
+.color-blue, .main .color-blue { color: #09BBF1; }
+
+.align-center { text-align: center; }
+
+ul.normal-lst li { padding: 0; }
+ul.normal-lst li + li { margin-top: 1rem; }
+
+.ms-tableRow { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-between; -moz-justify-content: space-between; justify-content: space-between; margin: 0 auto; padding: 0 20px; }
+@media only screen and (min-width: 992px) { .ms-tableRow { width: 90%; } }
+@media only screen and (min-width: 1366px) { .ms-tableRow { width: calc(65.625% + 40px); } }
+.ms-tableRow .ms-verticalAlignTop:nth-child(n+3):not(.static) { display: none; }
+
+#siteIcon { display: block; }
+
+.ms-core-navigation { font-family: "J&JCircular"; }
+
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover { color: #e51400; }
+
+.ms-core-listMenu-item { font-size: 1rem; }
+.ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item { margin-right: 3.75rem; }
+.ms-core-listMenu-horizontalBox li.static:last-child > .ms-core-listMenu-item { margin-right: 0; }
+.ms-core-listMenu-item:link, .ms-core-listMenu-item:visited { color: #605e5c; }
+.ms-core-listMenu-item .menu-item-text { display: inline-block; }
+.ms-core-listMenu-item:not(.dynamic) { line-height: 90px; }
+.ms-core-listMenu-item:not(.dynamic).selected .menu-item-text:after { content: ''; display: block; width: 26px; height: 4px; background-color: #e51400; margin: 5px auto 0; }
+.ms-core-listMenu-item.selected { font-weight: 500; }
+.ms-core-listMenu-item.selected, .ms-core-listMenu-item.selected:link, .ms-core-listMenu-item.selected:visited { color: #e51400; }
+.ms-core-listMenu-item .menu-item-text { display: inline-block; line-height: 1; }
+
+.ms-breadcrumb-box { width: auto; }
+.ms-breadcrumb-box .static.ms-verticalAlignTop { margin-left: -3.75rem; margin-right: -25px; }
+.ms-breadcrumb-box a.ms-core-listMenu-item:hover { color: #e51400; }
+
+.ms-core-listMenu-horizontalBox .dynamic-children.additional-background { display: inline-block; background: transparent; position: relative; }
+.ms-core-listMenu-horizontalBox .dynamic-children.additional-background:after { content: ''; width: 16px; height: 10px; background: url(/teams/Innovation-leadership/SiteAssets/images/icons/dropdown.svg) no-repeat center; background-position: 100% 100%; position: absolute; right: 0; top: calc(50% - 5px); }
+
+ul.dynamic { width: auto !important; padding: 0 .75rem; border: none; box-shadow: 0px 25px 100px 0px rgba(68, 88, 157, 0.08); }
+
+li.dynamic { padding: .875rem 0; }
+li.dynamic + li.dynamic { border-top: 1px solid #eaeaec; }
+
+.ms-siteicon-a, .ms-siteicon-img { max-width: none; max-height: none; }
+
+.ms-siteicon-a { height: 90px; line-height: 90px; }
+
+.ms-siteicon-img { display: inline; vertical-align: middle; }
+
+footer.foot { background-color: #f9fafc; padding-top: 4rem; }
+@media only screen and (min-width: 992px) { footer.foot { padding-top: 7.8125%; } }
+footer.foot .bottom { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: flex-end; -moz-justify-content: flex-end; justify-content: flex-end; border-top: 2px solid #b9b9b9; line-height: 90px; }
+footer.foot .ms-core-listMenu-root a.menu-item, footer.foot .ms-core-listMenu-root a.menu-item:visited, footer.foot .ms-core-listMenu-root a.menu-item:link { color: #605e5c; }
+footer.foot .ms-core-listMenu-root a.menu-item:hover { color: #e51400; }
+footer.foot .ms-core-listMenu-root .menu-item-text { font-weight: normal; }
+footer.foot li.dynamic-children { position: relative; }
+footer.foot li.dynamic-children.hover ul.dynamic { left: -10px; top: auto; bottom: 70px; }
+footer.foot ul.dynamic { line-height: 1; }
+
+.contact-us { margin-bottom: 3.5rem; }
+@media only screen and (min-width: 992px) { .contact-us { margin-bottom: 5.35rem; } }
+.contact-us .sub-logo { display: inline-block; font-size: 0; }
+.contact-us .sub-logo img { width: 10rem; }
+@media only screen and (min-width: 1366px) { .contact-us .sub-logo img { width: 11vw; } }
+.contact-us .sub-logo h4 { margin-top: .5rem; font-weight: 700; font-size: 1.25rem; }
+
+.contact-details { float: right; font-size: 0; }
+@media only screen and (max-width: 767px) { .contact-details { float: none; text-align: center; } }
+
+.contact-detail-item { display: inline-block; margin: 0 2.5rem; }
+.contact-detail-item:last-child { margin-right: 0; }
+@media only screen and (max-width: 991px) { .contact-detail-item { margin: 0 1.5rem; }
+  .contact-detail-item:first-child, .contact-detail-item:last-child { margin-left: 0; }
+  .contact-detail-item:nth-of-type(2) { margin-right: 0; } }
+@media only screen and (max-width: 767px) { .contact-detail-item { margin: 3rem 1rem 0; } }
+@media only screen and (max-width: 480px) { .contact-detail-item { margin: 2rem auto; display: block; } }
+@media only screen and (min-width: 1200px) { .contact-detail-item { margin: 0 1.5rem; } }
+.contact-detail-item .program { font-size: .75rem; font-weight: 500; }
+.contact-detail-item h3 { margin: 0 0 1.25rem; }
+@media only screen and (max-width: 767px) { .contact-detail-item h3 { margin-bottom: .75rem; } }
+.contact-detail-item .email-text { font-size: .8rem; }
+
+a.email-text { -webkit-transition: color 0.2s ease; -moz-transition: color 0.2s ease; transition: color 0.2s ease; }
+a.email-text, a.email-text:visited, a.email-text:link { color: #605e5c; }
+a.email-text:hover, a.email-text:active { color: #e51400; }
+
+.email-text { display: inline-block; padding-left: 26.5px; word-break: break-all; position: relative; }
+.email-text:before { content: ''; display: inline-block; width: 18.5px; height: 14.5px; background: url(/teams/Innovation-leadership/SiteAssets/images/icons/email.svg) no-repeat center; background-size: 100% 100%; position: absolute; left: 0; top: .2em; }
+.contact-us .email-text { line-height: 1.25; font-weight: normal; }
+.contact-us .email-text:before { margin-top: -3px; }
+
+button, .btn { cursor: pointer; outline: none; }
+
+.silver-btn { background-color: #f9fafc; }
+
+.btn { display: inline-block; padding: .875rem 1rem; line-height: 1.25; text-align: center; font-weight: normal; font-size: 1rem; border: 1px solid #e51400; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; transition: all 0.2s ease; }
+.btn.btn-border { color: #e51400; background-color: #fff; }
+.btn.btn-border:hover { color: #fff; background-color: #e51400; }
+.btn.btn-primary { color: #fff; background-color: #e51400; }
+.btn.btn-border:hover, .btn.btn-primary:hover { box-shadow: 0 20px 30px 0 rgba(229, 20, 0, 0.2); }
+.btn.btn-border:active, .btn.btn-primary:active { background-color: #d41300; box-shadow: 0 20px 30px 0 rgba(229, 20, 0, 0.2); }
+
+.icon-arrow { display: inline-block; width: 21px; height: 14px; vertical-align: middle; background: url(/teams/Innovation-leadership/SiteAssets/images/icons/arrow_default.svg) no-repeat; background-size: 100% 100%; }
+
+.arrow-link { display: inline-block; font-weight: 500; }
+.arrow-link, .arrow-link:visited { color: #e51400; }
+.arrow-link:after { content: ''; display: inline-block; width: 21px; height: 14px; margin-left: 1.125rem; vertical-align: middle; background: url(/teams/Innovation-leadership/SiteAssets/images/icons/arrow_primary.svg) no-repeat center; background-size: 100% 100%; }
+
+.btn-link { background-color: #e51400; }
+.btn-link, .btn-link:visited { color: #fff; }
+.btn-link:hover, .btn-link:visited { color: #fff; }
+.btn-link.btn-border-link { background-color: transparent; }
+.btn-link.btn-border-link, .btn-link.btn-border-link:visited { color: #e51400; }
+.btn-link.btn-border-link .icon-arrow { background-image: url(/teams/Innovation-leadership/SiteAssets/images/icons/arrow_primary.svg); }
+.btn-link.btn-border-link:hover { color: #fff; }
+.btn-link.btn-border-link:hover .icon-arrow { background-image: url(/teams/Innovation-leadership/SiteAssets/images/icons/arrow_default.svg); }
+.btn-link:hover { background-color: #e51400; box-shadow: 0 0.75rem 1.25rem 0 rgba(229, 20, 0, 0.2); }
+.btn-link:active { background-color: #d41300; border-color: #d41300; box-shadow: 0px 12px 20px 0px rgba(229, 20, 0, 0.2); }
+.btn-link .icon-arrow { margin-left: 5px; }
+
+.view-more { display: block; margin-top: 1.375rem; padding: .9rem; text-align: center; font-weight: 500; font-size: .8rem; color: #e51400; background-color: #f9fafc; cursor: pointer; }
+.view-more span:after { content: ''; display: inline-block; width: 1rem; height: .5rem; margin-left: .7rem; background: url(/teams/Innovation-leadership/SiteAssets/images/icons/dropdown_primary.svg) no-repeat center; background-size: 100% 100%; }
+.view-more.packup span:after { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+
+/*# sourceMappingURL=common.css.map */

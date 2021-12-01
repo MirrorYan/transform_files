@@ -1,0 +1,98 @@
+/*
+ * @file
+ * Change style of elementUI.
+ */
+
+// Tooltip
+.el-tooltip__popper {
+  max-width: 90%;
+}
+
+// Input
+.el-date-editor.el-input,
+.el-range-editor.el-input__inner,
+.el-select {
+  width: 100%;
+}
+.el-input__inner,
+input.el-input__inner,
+.el-range-input,
+.el-range-editor.is-disabled,
+.el-textarea__inner,
+.el-textarea.is-disabled .el-textarea__inner {
+  background-color: #f1f1f1;
+  border: none;
+}
+.el-input.is-disabled .el-input__inner,
+.el-range-editor.is-disabled,
+.el-textarea.is-disabled .el-textarea__inner {
+  color: #999;
+}
+.ticket-dialog,
+.activity-dialog {
+  .el-textarea__inner {
+    height: 80px;
+    resize: none;
+  }
+}
+.el-icon-date::before {
+  display: inline-block;
+  margin-top: 1px;
+  opacity: .7;
+}
+
+// Form
+.el-form {
+  > .el-form-item:last-child {
+    margin-bottom: 0;
+  }
+}
+.el-form-item__label {
+  color: #333;
+}
+input.el-input__inner {
+  padding-left: 15px;
+}
+
+// Button
+.el-button {
+  transition: opacity .3s ease-out;
+  &:hover {
+    opacity: .8;
+  }
+  &.el-button--primary {
+    background-color: $btn-blue;
+    border-color: $btn-blue;
+  }
+  &.el-button--success {
+    background-color: $btn-green;
+    border-color: $btn-green;
+  }
+  &.el-button--danger {
+    background-color: $btn-red;
+    border-color: $btn-red;
+  }
+}
+.el-picker-panel__icon-btn {
+  padding: 1px 6px;
+  &:hover {
+    border: none;
+    background-color: none;
+  }
+}
+.form-button-group {
+  margin-top: 40px;
+  text-align: center;
+  .el-button {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+// Dialog
+.el-dialog {
+  border-radius: 10px;
+}
+.el-dialog__title {
+  font-weight: bold;
+}

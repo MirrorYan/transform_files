@@ -1,0 +1,142 @@
+/*
+ * @file
+ * Basic style.
+ */
+
+/* === For outer === */
+#titlerow,
+#pageContentTitle,
+.ms-webpart-chrome-title,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField > p,
+.ms-rtestate-read.ms-rte-wpbox + p {
+  display: none;
+}
+#pageStatusBar[class] {
+  margin-bottom: 0;
+}
+.contentwrapper,
+.article-content,
+.welcome-content,
+.ms-webpartzone-cell {
+  margin: 0;
+}
+#contentBox,
+div.article,
+div.welcome-links {
+  padding: 0;
+}
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField #MSOZoneCell_WebPartWPQ2 {
+  margin-top: -5px;
+}
+
+/* === Basic === */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // font-family: sans-serif;
+  min-width: 1025px;
+  overflow: auto;
+  background: #F7F7F7;
+}
+
+button {
+  width: auto;
+  min-width: auto;
+  margin-left: 0;
+  background-color: #F7F7F7;
+}
+
+#app {
+  font-size: 14px;
+  a {
+    text-decoration: none;
+  }
+  input {
+    background: #f1f1f1;
+  }
+}
+
+// Special color Element.
+.red {
+  color: $red;
+}
+.orange {
+  color: $orange;
+}
+.green {
+  color: $green;
+}
+.blue {
+  color: $blue;
+}
+.purple {
+  color: $purple;
+}
+.silver {
+  color: $silver;
+}
+.gray {
+  color: $gray;
+}
+.brown {
+  color: $brown;
+}
+
+// For Method Status tag.
+.status-tag {
+  display: inline-block;
+  font-size: .9em;
+  & + .status-tag {
+    margin-left: 8px;
+  }
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-top: -2px;
+    margin-right: 5px;
+  }
+  &.green {
+    color: $green;
+    &::before {
+      background: $green;
+    }
+  }
+  &.gray {
+    color: $gray;
+    &::before {
+      background: $gray;
+    }
+  }
+  &.brown {
+    color: $brown;
+    &::before {
+      background: $brown;
+    }
+  }
+  &.red {
+    color: $red;
+    &::before {
+      background: $red;
+    }
+  }
+  &.silver {
+    color: $silver;
+    &::before {
+      background: $silver;
+    }
+  }
+}
+
+// Page title
+h1.page-title {
+  line-height: 1.2;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 28px;
+  color: #000;
+}

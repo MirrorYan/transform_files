@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="14px" viewBox="0 0 21 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>箭头</title>
+    <desc>Created with Sketch.</desc>
+    <g id="EXPAND" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图-Home" transform="translate(-24.000000, -276.000000)" fill-rule="nonzero">
+            <g id="箭头" transform="translate(34.000000, 282.000000) scale(-1, 1) translate(-34.000000, -282.000000) translate(24.000000, 272.000000)">
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                <path d="M1.05045455,10.4913636 L19.25,10.4913636 L19.25,11.4004546 L1.05045455,11.4004546 L1.05045455,10.4913636 Z M6.62363637,17.0959091 L0.498636367,10.9709091 L6.67363637,4.79545455 L7.31636363,5.43818182 L1.78409092,10.9709091 L7.26636363,16.4531818 L6.62363637,17.0959091 Z" id="形状" stroke="#E51400" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+// Font
+$font-circ: 'J&JCircular';
+
+// Colors
+$color-primary: #e51400;
+$color-second: #d41300;
+$color-black: #605e5c;
+$color-silver: #f9fafc;
+$color-silver-blue: #E5ECF4;
+$color-blue: #09BBF1;
+$color-blue-deep: #44589d;
+$color-green: #34c643;
+
+// Breakpoints
+$mobile-xs: 'only screen and (max-width: 375px)';
+$mobile-sm: 'only screen and (max-width: 480px)';
+$mobile: 'only screen and (max-width: 767px)';
+$touchscreen: 'only screen and (max-width: 991px)';
+$tablet-only: '(min-width: 768px) and (max-width: 991px)';
+$tablet: 'only screen and (min-width: 768px)';
+$desktop: 'only screen and (min-width: 992px)';
+$desktop-md: 'only screen and (min-width: 1200px)';
+$desktop-lg: 'only screen and (min-width: 1366px)';

@@ -1,0 +1,89 @@
+/*
+ * @file
+ * Banner
+ */
+
+.banner-with-text {
+  padding: 5rem 0;
+
+  @media #{$tablet} {
+    .container {
+      @include flex;
+      @include align-items(center);
+      @include justify-content(space-between);
+    }
+    img.banner {
+      width: 40%;
+    }
+  }
+  @media #{$desktop} {
+    img.banner {
+      width: 38.5%;
+    }
+  }
+}
+.banner-text {
+  @include flex-grow(1);
+  margin-right: 2rem;
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  @media #{$desktop} {
+    margin-right: 8.5%;
+    font-size: 1.125rem;
+  }
+  @media #{$touchscreen} {
+    h1 {
+      font-size: 3.75rem;
+    }
+  }
+  @media #{$mobile} {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+.illustrated-img-left {
+  .left-img {
+    width: 40%;
+  }
+  .title {
+    margin-bottom: 1.25rem;
+  }
+
+  @media #{$mobile} {
+    .left-img {
+      width: 80%;
+      display: block;
+      margin: auto;
+    }
+    .illustrated-content {
+      margin-top: 2.5rem;
+    }
+  }
+  @media #{$tablet} {
+    @include flex;
+    @include align-items(center);
+    .illustrated-content {
+      @include flex-grow(1);
+      margin-left: 2.5rem;
+    }
+  }
+  @media #{$desktop} {
+    .left-img {
+      width: 50%;
+    }
+    .illustrated-content {
+      margin-left: 3.75rem;
+    }
+  }
+  @media #{$desktop-lg} {
+    .left-img {
+      width: 60%;
+    }
+  }
+}

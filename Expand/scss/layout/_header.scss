@@ -1,0 +1,124 @@
+.ms-tableRow {
+  @include flex;
+  @include justify-content(space-between);
+  margin: 0 auto;
+  padding: 0 20px;
+  @media #{$desktop} {
+    width: 90%;
+  }
+  @media #{$desktop-lg} {
+    width: calc(65.625% + 40px);
+  }
+
+  .ms-verticalAlignTop:nth-child(n+3):not(.static) {
+    display: none;
+  }
+}
+
+#siteIcon {
+  display: block;
+}
+.ms-core-navigation {
+  font-family: $font-circ;
+}
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover {
+  color: $color-primary;
+}
+.ms-core-listMenu-item {
+  font-size: 1rem;
+  .ms-core-listMenu-horizontalBox li.static > & {
+    margin-right: 3.75rem;
+  }
+  .ms-core-listMenu-horizontalBox li.static:last-child > & {
+    margin-right: 0;
+  }
+
+  &:link,
+  &:visited {
+    color: $color-black;
+  }
+
+  .menu-item-text {
+    display: inline-block;
+  }
+
+  &:not(.dynamic) {
+    line-height: 90px;
+    &.selected .menu-item-text {
+      &:after {
+        content: '';
+        display: block;
+        width: 26px;
+        height: 4px;
+        background-color: $color-primary;
+        margin: 5px auto 0;
+      }
+    }
+  }
+  &.selected {
+    font-weight: 500;
+    &, &:link, &:visited {
+      color: $color-primary;
+    }
+  }
+
+  .menu-item-text {
+    display: inline-block;
+    line-height: 1;
+  }
+}
+.ms-breadcrumb-box {
+  width: auto;
+  .static.ms-verticalAlignTop {
+    margin-left: -3.75rem;
+    margin-right: -25px;
+  }
+  a.ms-core-listMenu-item:hover {
+    color: $color-primary;
+  }
+}
+.ms-core-listMenu-horizontalBox {
+  .dynamic-children.additional-background {
+    display: inline-block;
+    background: transparent;
+    position: relative;
+    &:after {
+      content: '';
+      width: 16px;
+      height: 10px;
+      background: url(/teams/Innovation-leadership/SiteAssets/images/icons/dropdown.svg) no-repeat center;
+      background-position: 100% 100%;
+      position: absolute;
+      right: 0;
+      top: calc(50% - 5px);
+    }
+  }
+}
+
+// Sub menu
+ul.dynamic {
+  width: auto !important;
+  padding: 0 .75rem;
+  border: none;
+  box-shadow: 0px 25px 100px 0px rgba($color-blue-deep, .08);
+}
+li.dynamic {
+  padding: .875rem 0;
+  & + & {
+    border-top: 1px solid #eaeaec;
+  }
+}
+
+.ms-siteicon-a,
+.ms-siteicon-img {
+  max-width: none;
+  max-height: none;
+}
+.ms-siteicon-a {
+  height: 90px;
+  line-height: 90px;
+}
+.ms-siteicon-img {
+  display: inline;
+  vertical-align: middle;
+}

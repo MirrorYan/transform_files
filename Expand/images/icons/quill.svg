@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>quill</title>
+    <desc>Created with Sketch.</desc>
+    <g id="EXPAND" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图-EXPAND-China" transform="translate(-222.000000, -154.000000)" fill-rule="nonzero">
+            <g id="quill" transform="translate(222.000000, 154.000000)">
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                <path d="M0,20 C2.5,12.5 9.043125,0 20,0 C14.863125,4.12125 12.5,13.75 8.75,13.75 L5,13.75 L1.25,20 L0,20 Z" id="路径" fill="#E51400"></path>
+            </g>
+        </g>
+    </g>
+</svg>

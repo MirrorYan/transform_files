@@ -1,0 +1,18 @@
+// Font Face Mixin
+@mixin font-face($family, $file, $weight: normal, $style: normal, $stretch: normal) {
+  @font-face {
+    font-family: $family;
+    font-stretch: $stretch;
+    font-style: $style;
+    font-weight: $weight;
+    src: url("#{$file}.woff") format("woff"),
+    url("#{$file}.ttf") format("truetype"),
+    url("#{$file}.otf") format("opentype");
+  }
+}
+
+//families
+@include font-face($font-circ, '/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Light', 300);
+@include font-face($font-circ, '/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Book', normal);
+@include font-face($font-circ, '/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Medium', 500);
+@include font-face($font-circ, '/teams/Innovation-leadership/SiteAssets/fonts/J&J_Circular-Bold', 900);

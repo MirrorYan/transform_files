@@ -1,0 +1,138 @@
+// Button -----
+button,
+.btn {
+  cursor: pointer;
+  outline: none;
+}
+
+.silver-btn {
+  background-color: $color-silver;
+}
+
+.btn {
+  display: inline-block;
+  padding: .875rem 1rem;
+  line-height: 1.25;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1rem;
+  border: 1px solid $color-primary;
+  @include transition(all .2s ease);
+  &.btn-border {
+    color: $color-primary;
+    background-color: #fff;
+    &:hover {
+      color: #fff;
+      background-color: $color-primary;
+    }
+  }
+  &.btn-primary {
+    color: #fff;
+    background-color: $color-primary;
+  }
+  &.btn-border,
+  &.btn-primary {
+    &:hover {
+      box-shadow: 0 20px 30px 0 rgba($color-primary, .2);
+    }
+    &:active {
+      background-color: $color-second;
+      box-shadow: 0 20px 30px 0 rgba($color-primary, .2);
+    }
+  }
+}
+
+// icons ------------------
+.icon-arrow {
+  display: inline-block;
+  width: 21px;
+  height: 14px;
+  vertical-align: middle;
+  background: url(/teams/Innovation-leadership/SiteAssets/images/icons/arrow_default.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+// Arrow Link
+.arrow-link {
+  display: inline-block;
+  font-weight: 500;
+  &, &:visited {
+    color: $color-primary;
+  }
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 21px;
+    height: 14px;
+    margin-left: 1.125rem;
+    vertical-align: middle;
+    background: url(/teams/Innovation-leadership/SiteAssets/images/icons/arrow_primary.svg) no-repeat center;
+    background-size: 100% 100%;
+  }
+}
+
+// Link Button -------------
+.btn-link {
+  background-color: $color-primary;
+  &, &:visited {
+    color: #fff;
+  }
+  &:hover,
+  &:visited {
+    color: #fff;
+  }
+
+  &.btn-border-link {
+    background-color: transparent;
+    &, &:visited {
+      color: $color-primary;
+    }
+    .icon-arrow {
+      background-image: url(/teams/Innovation-leadership/SiteAssets/images/icons/arrow_primary.svg);
+    }
+    &:hover {
+      color: #fff;
+      .icon-arrow {
+        background-image: url(/teams/Innovation-leadership/SiteAssets/images/icons/arrow_default.svg);
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    box-shadow: 0 .75rem 1.25rem 0 rgba($color-primary, .2);
+  }
+  &:active {
+    background-color: $color-second;
+    border-color: $color-second;
+    box-shadow: 0px 12px 20px 0px rgba($color-primary, .2);
+  }
+
+  .icon-arrow {
+    margin-left: 5px;
+  }
+}
+
+.view-more {
+  display: block;
+  margin-top: 1.375rem;
+  padding: .9rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: .8rem;
+  color: $color-primary;
+  background-color: $color-silver;
+  cursor: pointer;
+  span:after {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: .5rem;
+    margin-left: .7rem;
+    background: url(/teams/Innovation-leadership/SiteAssets/images/icons/dropdown_primary.svg) no-repeat center;
+    background-size: 100% 100%;
+  }
+  &.packup span:after {
+    @include transform(rotate(180deg));
+  }
+}

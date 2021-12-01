@@ -1,0 +1,17 @@
+.breadcrumbs-container {
+  font-size: 1rem;
+  font-weight: normal;
+
+  li {
+    display: inline-block;
+    line-height: 1.25rem;
+    &.current {
+      font-weight: 500;
+    }
+    + li {
+      margin-left: 1rem;
+      padding-left: 1rem;
+      border-left: 2px solid $color-black;
+    }
+  }
+}

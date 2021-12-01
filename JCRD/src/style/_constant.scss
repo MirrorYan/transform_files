@@ -1,0 +1,35 @@
+/*
+ * @file
+ * Constants for styles.
+ */
+
+// Colors.
+$red: #F05252;
+$red-trans: rgba(255, 180, 180, .1);
+$green: #04C40E;
+$green-trans: rgba(175, 215, 180, .1);
+$gray-white: #F2F2F2;
+$gray: #5B5A56;
+$gray-trans: rgba(215, 215, 215, 0.1);
+$silver: #aaa;
+$silver-light: #D7DADC;
+$silver-deep: #B0B0B0;
+$silver-trans: rgba(188, 188, 188, 0.1);
+$orange: #FFA900;
+$orange-trans: rgba(255, 238, 205, 0.1);
+$brown: #c88c4b;
+$brown-trans: rgba(255, 190, 120, .1);
+$blue: #6C95D9;
+$blue-trans: rgba(170, 185, 215, .1);
+$purple: #c38cff;
+$purple-trans: rgba(255, 200, 255, .1);
+$btn-red: #C55151;
+$btn-green: #63C551;
+$btn-blue: #51ACC5;
+
+// Length.
+$projTable-width: 360px;
+$projHead-height: 25px;
+$projTitle-height: 40px;
+$projItem-height: 30px;
+$projItem-space: 2px;

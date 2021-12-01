@@ -1,0 +1,10 @@
+/*
+ * @file
+ * Mixins for styles.
+ */
+
+@mixin clearfix {
+  content: '';
+  clear: both;
+  display: block;
+}

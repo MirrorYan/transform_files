@@ -1,0 +1,63 @@
+// Support
+@import './base/base';
+// components
+@import './components/breadcrumbs';
+
+body {
+  background-color: $color-silver;
+}
+
+.main {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.page-title {
+  font-weight: normal;
+  font-size: 1.25rem;
+  @media #{$desktop} {
+    padding-top: 8.125rem;
+  }
+  h1 {
+    margin-bottom: 2rem;
+    @media #{$tablet} {
+      font-size: 2.5rem;
+    }
+    @media #{$desktop} {
+      font-size: 3.125rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.white-bg {
+  padding-top: 5rem;
+}
+
+.breadcrumbs-container {
+  margin-bottom: 3.125rem;
+  li + li {
+    border-color: #e5e5e5;
+  }
+}
+
+.media-wrapper {
+  margin-bottom: 5rem;
+  font-size: 0;
+  video,
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.event-body {
+  &, * {
+    font-family: $font-circ !important;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

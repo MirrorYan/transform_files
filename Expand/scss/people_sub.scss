@@ -1,0 +1,204 @@
+// Support
+@import './base/base';
+// components
+@import './components/breadcrumbs';
+
+$color-old-blue: #027AFF;
+
+body {
+  background-color: #fff;
+}
+body #contentBox {
+  margin-left: 0 !important;
+}
+
+.breadcrumbs-container {
+  margin: 5rem 0 1.875rem;
+}
+
+.user-block {
+  @include flex;
+  margin-bottom: 6.25rem;
+
+  h2 {
+    line-height: 1.25;
+  }
+
+  .left-side {
+    width: 22.22%;
+    min-width: 200px;
+    margin-right: 1.875rem;
+    padding: 1.25rem;
+    text-align: center;
+    background-color: $color-silver;
+    .semesters {
+      text-align: left;
+      margin-bottom: 1.4rem;
+      margin-left: -1.25rem;
+      span {
+        display: inline-block;
+        padding: .4rem .75rem;
+        line-height: 1.25;
+        font-size: .8rem;
+        background-color: #EEF0F4;
+      }
+    }
+    @media #{$desktop-lg} {
+      padding: 2.4% 1.4rem;
+      .semesters {
+        margin-left: -1.4rem;
+      }
+    }
+    .avatar {
+      display: inline-block;
+      width: 83%;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    .name {
+      margin-bottom: 1.75rem;
+    }
+    p {
+      line-height: 1.25;
+      + p {
+        margin-top: .75rem;
+      }
+    }
+
+    .division,
+    .post {
+      padding-left: 1.625rem;
+      text-align: left;
+      position: relative;
+      &:before {
+        content: '';
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 0;
+        top: .15em;
+      }
+    }
+    .division:before {
+      background-image: url(/teams/Innovation-leadership/SiteAssets/images/icons/department.svg);
+    }
+    .post:before {
+      background-image: url(/teams/Innovation-leadership/SiteAssets/images/icons/post.svg);
+    }
+    .email {
+      text-align: left;
+      a {
+        &, &:visited, &:hover {
+          color: $color-old-blue;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .right-side {
+    @include flex-grow(1);
+  }
+  .company-block {
+    padding: 1.875rem 1.875rem 3.75rem;
+    margin-bottom: 2.5rem;
+    background-color: $color-silver;
+    .summary {
+      margin-bottom: 1.875rem;
+      line-height: 1.25;
+      font-weight: 500;
+      font-size: 1.25rem;
+    }
+    .company-line {
+      @include flex;
+      @include align-items(center);
+    }
+    .company-name {
+      @include flex-grow(1);
+      margin-right: 1rem;
+    }
+    .company-logo {
+      max-width: 6.875rem;
+      font-size: 0;
+    }
+    .description {
+      margin-top: 1.25rem;
+      line-height: 1.875;
+      font-weight: normal;
+    }
+  }
+  .qa-item {
+    margin: 0;
+    border-bottom: 1px solid $color-silver-blue;
+  }
+  .question,
+  .answer {
+    padding-left: 4.75rem;
+    padding-right: 3.125rem;
+  }
+  .question {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      position: absolute;
+    }
+    &:before {
+      width: 1.25rem;
+      height: 1.25rem;
+      background-image: url(/teams/Innovation-leadership/SiteAssets/images/icons/quill.svg);
+      left: 2.75rem;
+      top: calc(1.25rem + 4px);
+    }
+    &:after {
+      width: 1rem;
+      height: .625rem;
+      background-image: url(/teams/Innovation-leadership/SiteAssets/images/icons/dropdown.svg);
+      right: 1.25rem;
+      top: calc(1.25rem + 10px);
+      @include transition(transform .3s ease);
+    }
+    &.drop:after {
+      @include transform(rotate(180deg));
+    }
+  }
+  .answer {
+    display: none;
+    margin-bottom: 1.25rem;
+    &, * {
+      font-family: $font-circ !important;
+      font-weight: normal !important;
+      font-size: 1rem !important;
+      color: $color-black !important;
+    }
+    ul {
+      li {
+        padding-left: 1rem;
+        position: relative;
+        &:before {
+          content: '';
+          display: block;
+          width: .5rem;
+          height: .5rem;
+          background-color: $color-silver-blue;
+          position: absolute;
+          left: 0;
+          top: .5rem;
+        }
+      }
+    }
+  }
+}
